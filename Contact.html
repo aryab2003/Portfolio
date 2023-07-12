@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arya Bhattacharyya's Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Architects Daughter', cursive;
+      background-color: navy;
+      color: #fff;
+      background-image: url('https://c4.wallpaperflare.com/wallpaper/632/34/549/technology-monitor-alpha-coders-binary-wallpaper-preview.jpg');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+    }
+
+    #navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    #content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    #portfolio-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: yellow;
+      animation: rotateText 5s linear infinite;
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .section-content {
+      color: #fff;
+    }
+
+    #contact-section {
+      background-color: red;
+      padding: 20px;
+      margin-bottom: 20px;
+      position: relative;
+      width: 400px;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .contact-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: yellow;
+    }
+
+    .contact-info {
+      color: #fff;
+    }
+    .email-link {
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.8;
+    }
+
+    .email-link:hover {
+      opacity: 1;
+    }
+    #footer {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    #footer-heart {
+      color: red;
+      font-size: 24px;
+    }
+
+  
+    .heart {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: fallingHearts 5s linear infinite;
+      color:pink;
+    }
+    @keyframes fallingHearts {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+
+    @keyframes rotateText {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    #visit-again {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: yellow;
+  animation: visitAgain 3s linear infinite;
+}
+
+    @keyframes visitAgain {
+      0%, 50% {
+        opacity: 0;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(-10px);
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Project.html">Projects</a>
+    <a href="#contact" style="text-decoration: underline;">Contact Me</a>
+  </div>
+
+  <div id="content">
+    <h1 id="portfolio-title">Arya's Portfolio</h1>
+
+    <div id="contact-section">
+      <h2 class="section-title contact-title">Contact Me</h2>
+      <p class="section-content contact-info">
+        Address: National Institute of Technology, Sector 1, Rourkela, Odisha,India Pin Code - 769008<br>
+        Phone:+91 9903974045<br>
+        Email: <a class="email-link" href="mailto:bhattacharyyaarya165@gmail.com">bhattacharyyaarya165@gmail.com</a>
+      </p>
+    </div>
+
+  </div>
+  <p id="visit-again">Visit Again!</p>
+  <div id="footer">
+    Made With Love <span id="footer-heart">&hearts;</span> By Arya. Hope you have a beautiful journey scrolling through my portfolio.
+  </div>
+
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+
+  <script>
+    // Generate random position for each heart
+    var hearts = document.getElementsByClassName("heart");
+    for (var i = 0; i < hearts.length; i++) {
+      var heart = hearts[i];
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDelay = Math.random() + "s";
+    }
+  </script>
+</body>
+
+</html>

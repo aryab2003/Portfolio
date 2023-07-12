@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arya Bhattacharyya's Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Architects Daughter', cursive;
+      background-color: navy;
+      color: #fff;
+      background-image: url('https://c4.wallpaperflare.com/wallpaper/632/34/549/technology-monitor-alpha-coders-binary-wallpaper-preview.jpg');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+    }
+
+    #navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    #content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    #portfolio-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: yellow;
+      animation: rotateText 5s linear infinite;
+    }
+
+    #portfolio-info {
+      background-color: red;
+      padding: 20px;
+    }
+
+    #footer {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+    #footer-heart {
+      color: red;
+      font-size: 24px;
+    }
+    @keyframes fallingHearts {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+    @keyframes rotateAvatar {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes rotateText {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .heart {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: fallingHearts 5s linear infinite;
+      color:pink;
+    }
+#hire-me-button,
+    #download-resume-button {
+      background-color: blue;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      font-size: 16px;
+      margin: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      opacity: 0.8;
+    }
+#avatar {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      margin: 20px;
+      animation: rotateAvatar 5s linear infinite;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+   <a href="#home" style="text-decoration: underline;">Home</a>
+    <a href="About.html">About</a>
+   
+    <a href="Project.html">Projects</a>
+    <a href="Contact.html">Contact Me</a>
+  </div>
+
+  <div id="content">
+    <h1 id="portfolio-title">Arya's Portfolio</h1>
+    <img id="avatar" src="https://cdn3d.iconscout.com/3d/premium/thumb/man-waving-hand-6784354-5600557.png" alt="Avatar">
+    <div id="portfolio-info">
+      <p>
+         Welcome to my portfolio! I'm Arya, a highly motivated Electrical Engineering student at National Institute of Technology,
+        Rourkela (EE'26). I have a strong foundation in C++ and a passion for full-stack development, app development, and Open Source
+        Contributions. I am skilled in the MERN stack, competitive programming, and exploring Web3 technologies. I am a strong advocate
+        for open-source software and an active contributor to the coding community. I am committed to enhancing my skills and
+        driving innovation in the field of technology.
+    </div>
+  </div>
+ </div>
+    <a id="hire-me-button" href="#hire">Hire Me</a>
+    <a id="download-resume-button" href="Arya_Resume_1st_Year (1).pdf" download>Download Resume</a>
+  </div>
+  <div id="footer">
+    Made With Love <span id="footer-heart">&hearts;</span> By Arya. Hope you have a beautiful journey scrolling through my portfolio.
+  </div>
+
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+
+  <script>
+    // Generate random position for each heart
+    var hearts = document.getElementsByClassName("heart");
+    for (var i = 0; i < hearts.length; i++) {
+      var heart = hearts[i];
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDelay = Math.random() + "s";
+    }
+  </script>
+</body>
+
+</html>

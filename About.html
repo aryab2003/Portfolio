@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arya Bhattacharyya's Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Architects Daughter', cursive;
+      background-color: navy;
+      color: #fff;
+      background-image: url('https://c4.wallpaperflare.com/wallpaper/632/34/549/technology-monitor-alpha-coders-binary-wallpaper-preview.jpg');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+    }
+
+    #navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    #content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    #portfolio-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: yellow;
+      animation: rotateText 5s linear infinite;
+    }
+
+    #about-section {
+      background-color: red;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    #skills-section,
+    #experiences-section,
+    #education-section {
+      background-color: blue;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .section-content {
+      color: #fff;
+    }
+
+    #footer {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    #footer-heart {
+      color: red;
+      font-size: 24px;
+    
+    }
+    .heart {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: fallingHearts 5s linear infinite;
+      color:pink;
+    }
+    @keyframes fallingHearts {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+    @keyframes rotateText {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <a href="Home.html">Home</a>
+    <a href="#about" style="text-decoration: underline;">About</a>
+   
+    <a href="Project.html">Projects</a>
+    <a href="Contact.html">Contact Me</a>
+  </div>
+
+  <div id="content">
+    <h1 id="portfolio-title">Arya's Portfolio</h1>
+
+    <div id="about-section">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-content">
+        I'm Arya, an Electrical Engineering student at the National Institute of Technology, Rourkela (EE'26). I'm passionate about exploring the intersection of technology and innovation. With a strong foundation in C++, I have achieved a 4🌟 rating on HackerRank in C++. As a Postman Student Expert, I have gained valuable experience in API testing and documentation.
+
+    In addition, I am proficient in the MERN stack, which includes technologies like MongoDB, Express.js, React.js, and Node.js. I enjoy building dynamic and interactive web applications. My curiosity and drive to learn have also led me to explore Android app development.
+
+    I am an enthusiastic advocate of Web3 technologies and open-source software. I actively contribute to the coding community and believe in the power of collaboration and knowledge sharing to drive innovation.
+
+    With a passion for continuous learning and growth, I am committed to leveraging my skills in Electrical Engineering and my expertise in software development to contribute to meaningful projects and make a positive impact in the tech industry.
+  </p>
+      </p>
+    </div>
+
+    <div id="skills-section">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-content">
+        - C++
+        <br>
+        - JavaScript
+        <br>
+        - HTML/CSS
+        <br>
+        - React.js
+        <br>
+        - Node.js
+        <br>
+        - MongoDB
+        <br>
+        - Problem Solving
+        <br>
+        - Data Structures & Algorithms
+        <br>
+        -Firebase
+        <br>
+        -AJAX,JQuery
+        <br>
+        -Express
+      </p>
+    </div>
+
+    <div id="experiences-section">
+      <h2 class="section-title">Experiences</h2>
+      <p class="section-content">
+        - Postman Student Expert
+        Postman
+        Jul 2023 - Present · 1 mo
+        <br>
+        -Technical Team Member
+        OpenCode Community 
+        May 2023 - Present · 3 mos
+        National Institute of Technology Rourkela 
+        <br>
+        -Participant
+        HackFest IIT(ISM) Dhanbad
+        Apr 2023 - Present · 4 mos
+        IIT DHANBAD
+        Qualified for the final round of HackFest'23
+        <br>
+        -Participant
+        HackNITR Hackathon
+        Jan 2023 - Present · 7 mos
+        National Institute of Technology Rourkela  
+        Qualified for the final round where top 23 teams around the globe were selected out of nearly 5000 Participants.
+      </p>
+    </div>
+
+    <div id="education-section">
+      <h2 class="section-title">Education</h2>
+      <p class="section-content">
+        - Bachelor of Technology (B.Tech) in Electrical Engineering, National Institute of Technology, Rourkela (2022-2026)
+        <br>
+       - Adamas International School
+        ISC
+        Apr 2022
+        Grade: 98.25%
+        <br>
+        -Adamas International School
+        ICSE
+        Apr 2020
+        Grade: 97%
+      </p>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    Made With Love <span id="footer-heart">&hearts;</span> By Arya. Hope you have a beautiful journey scrolling through my portfolio.
+  </div>
+
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+  <div class="heart">❤</div>
+
+  <script>
+    // Generate random position for each heart
+    var hearts = document.getElementsByClassName("heart");
+    for (var i = 0; i < hearts.length; i++) {
+      var heart = hearts[i];
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDelay = Math.random() + "s";
+    }
+    </script>
+</body>
+
+</html>
